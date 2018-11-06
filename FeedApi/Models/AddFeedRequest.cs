@@ -1,4 +1,4 @@
-﻿namespace FeedApi.Models.Requests
+﻿namespace FeedApi.Models
 {
     public class AddFeedRequest
     {

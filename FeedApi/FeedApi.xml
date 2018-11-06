@@ -4,5 +4,88 @@
         <name>FeedApi</name>
     </assembly>
     <members>
+        <member name="M:FeedApi.Controllers.ApiController.FeedCollections(System.Int32)">
+             <summary>
+             List All Feed Collections by User ID
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /api/FeedCollections/1
+            
+             </remarks>
+             <param name="userId">User ID</param>
+             <response code="200">Returns User's Feed Collections</response>
+             <response code="400">Api key is misssing</response>
+             <response code="401">Access Denied. Invalid Api key</response>
+             <response code="404">Feed Collections are empty</response>
+        </member>
+        <member name="M:FeedApi.Controllers.ApiController.Feeds(System.Int32,System.Int32)">
+             <summary>
+             List All Feeds Collection by User ID and Feed Collections ID
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /api/Feeds/1/1
+            
+             </remarks>
+             <param name="userId">User ID</param>
+             <param name="feedCollectionId">Feed Collections ID</param>
+             <response code="200">Returns User's Feed Collections</response>
+             <response code="400">Api key is misssing</response>
+             <response code="401">Access Denied. Invalid Api key</response>
+             <response code="404">Feeds Collection are empty</response>
+        </member>
+        <member name="M:FeedApi.Controllers.ApiController.CreateFeedCollection(FeedApi.Models.FeedCollection)">
+             <summary>
+             Create Feed Collection
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/CreateFeedCollection
+                 {
+                    "userId": 1,
+                    "Title": "Some title"
+                 }
+            
+             </remarks>
+             <param name="request"></param>
+             <response code="200">Returns collection ID</response>
+             <response code="400">Api key is misssing</response>
+             <response code="401">Access Denied. Invalid Api key</response>
+             <response code="409">Incorrect or empty body of request</response>
+             <response code="500">Create Feed Collection unexpected error</response>
+        </member>
+        <member name="M:FeedApi.Controllers.ApiController.AddFeed(FeedApi.Models.AddFeedRequest)">
+             <summary>
+             Add New Feed
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/AddFeed
+                 {
+                    "userId": 1,
+                    "feedCollectionId": 1,
+                    "url": "http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+                 }
+            
+             </remarks>
+             <param name="request"></param>
+             <response code="200">Returns collection ID</response>
+             <response code="400">Api key is misssing</response>
+             <response code="401">Access Denied. Invalid Api key</response>
+             <response code="409">Incorrect or empty body of request</response>
+             <response code="500">Add Feed unexpected error</response>
+        </member>
+        <member name="M:FeedApi.Models.FeedSource.GetFeeds(System.String)">
+            <summary>
+            Default is RSS
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

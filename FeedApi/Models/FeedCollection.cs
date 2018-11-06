@@ -1,8 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace FeedApi.Models
 {
@@ -16,6 +13,6 @@ namespace FeedApi.Models
         public string Title { get; set; }
 
         [JsonIgnore]
-        public List<Feed> Feeds { get; set; }
+        public List<Feed> Feeds { get; set; } = new List<Feed>();
     }
 }

@@ -1,1 +1,119 @@
 2018-11-06 13:14:07.980 +02:00 [INF] Web service getting started...
+2018-11-06 21:53:30.238 +02:00 [INF] Web service getting started...
+2018-11-06 21:55:27.230 +02:00 [INF] Web service getting started...
+2018-11-06 21:57:41.020 +02:00 [INF] Web service getting started...
+2018-11-06 21:59:34.420 +02:00 [ERR] CreateFeedCollection
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at FeedApi.Models.MemoryRepository.CreateFeedCollection(FeedCollection item) in c:\Downloads\C#\FeedApi\FeedApi\Models\MemoryRepository.cs:line 56
+   at FeedApi.Controllers.ApiController.CreateFeedCollection(FeedCollection request) in c:\Downloads\C#\FeedApi\FeedApi\Controllers\ApiController.cs:line 122
+2018-11-06 22:04:57.181 +02:00 [INF] Web service getting started...
+2018-11-06 22:07:26.459 +02:00 [ERR] CreateFeedCollection
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at FeedApi.Models.MemoryRepository.CreateFeedCollection(FeedCollection item) in c:\Downloads\C#\FeedApi\FeedApi\Models\MemoryRepository.cs:line 56
+   at FeedApi.Controllers.ApiController.CreateFeedCollection(FeedCollection request) in c:\Downloads\C#\FeedApi\FeedApi\Controllers\ApiController.cs:line 124
+2018-11-06 22:09:14.252 +02:00 [INF] Web service getting started...
+2018-11-06 22:11:10.106 +02:00 [INF] Web service getting started...
+2018-11-06 22:12:06.333 +02:00 [ERR] CreateFeedCollection
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.Max[TSource](IEnumerable`1 source, Func`2 selector)
+   at FeedApi.Models.MemoryRepository.CreateFeedCollection(FeedCollection item) in c:\Downloads\C#\FeedApi\FeedApi\Models\MemoryRepository.cs:line 59
+   at FeedApi.Controllers.ApiController.CreateFeedCollection(FeedCollection request) in c:\Downloads\C#\FeedApi\FeedApi\Controllers\ApiController.cs:line 124
+2018-11-06 22:15:03.070 +02:00 [INF] Web service getting started...
+2018-11-06 22:22:42.537 +02:00 [INF] Web service getting started...
+2018-11-06 22:29:40.107 +02:00 [INF] Web service getting started...
+2018-11-06 22:33:09.806 +02:00 [INF] Web service getting started...
+2018-11-06 22:35:19.782 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.DuplicateWaitObjectException: Duplicate objects in argument.
+Parameter name: This user has already exists Feed Collection with Test title!
+   at FeedApi.Models.MemoryRepository.CreateFeedCollection(FeedCollection item) in c:\Downloads\C#\FeedApi\FeedApi\Models\MemoryRepository.cs:line 59
+   at FeedApi.Controllers.ApiController..ctor(IRepository repository) in c:\Downloads\C#\FeedApi\FeedApi\Controllers\ApiController.cs:line 20
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-06 22:36:42.709 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.DuplicateWaitObjectException: Duplicate objects in argument.
+Parameter name: This user has already exists Feed Collection with Test title!
+   at FeedApi.Models.MemoryRepository.CreateFeedCollection(FeedCollection item) in c:\Downloads\C#\FeedApi\FeedApi\Models\MemoryRepository.cs:line 59
+   at FeedApi.Controllers.ApiController..ctor(IRepository repository) in c:\Downloads\C#\FeedApi\FeedApi\Controllers\ApiController.cs:line 20
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-06 22:38:44.364 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.DuplicateWaitObjectException: Duplicate objects in argument.
+Parameter name: This user has already exists Feed Collection with Test title!
+   at FeedApi.Models.MemoryRepository.CreateFeedCollection(FeedCollection item) in c:\Downloads\C#\FeedApi\FeedApi\Models\MemoryRepository.cs:line 59
+   at FeedApi.Controllers.ApiController..ctor(IRepository repository) in c:\Downloads\C#\FeedApi\FeedApi\Controllers\ApiController.cs:line 20
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-06 22:42:14.261 +02:00 [INF] Web service getting started...
+2018-11-06 22:46:26.016 +02:00 [INF] Web service getting started...
+2018-11-06 22:57:01.931 +02:00 [INF] Web service getting started...
+2018-11-06 23:05:08.910 +02:00 [INF] Web service getting started...
+2018-11-06 23:07:17.372 +02:00 [INF] Web service getting started...
+2018-11-06 23:25:45.177 +02:00 [INF] Web service getting started...
+2018-11-06 23:29:29.547 +02:00 [ERR] FeedCollections
+System.ArgumentException: Feed Collection with ID=1 not found!
+   at FeedApi.Models.MemoryRepository.GetUserFeeds(Int32 userId, Int32 feedCollectionId) in c:\Downloads\C#\FeedApi\FeedApi\Models\MemoryRepository.cs:line 44
+   at FeedApi.Controllers.ApiController.Feeds(Int32 userId, Int32 feedCollectionId) in c:\Downloads\C#\FeedApi\FeedApi\Controllers\ApiController.cs:line 94
+2018-11-06 23:29:52.414 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at FeedApi.Filters.ValidateFeedsCollectionExistsAttribute.OnResultExecuting(ResultExecutingContext context) in c:\Downloads\C#\FeedApi\FeedApi\Filters\ValidateFeedsCollectionExistsAttribute.cs:line 14
+   at Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-06 23:30:07.282 +02:00 [ERR] FeedCollections
+System.ArgumentException: Feed Collection with ID=1 not found!
+   at FeedApi.Models.MemoryRepository.GetUserFeeds(Int32 userId, Int32 feedCollectionId) in c:\Downloads\C#\FeedApi\FeedApi\Models\MemoryRepository.cs:line 44
+   at FeedApi.Controllers.ApiController.Feeds(Int32 userId, Int32 feedCollectionId) in c:\Downloads\C#\FeedApi\FeedApi\Controllers\ApiController.cs:line 94
+2018-11-06 23:31:03.290 +02:00 [INF] Web service getting started...
