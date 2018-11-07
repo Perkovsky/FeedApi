@@ -44,7 +44,14 @@ namespace FeedApi.Models
             var result = new List<Feed>();
             foreach (var feed in feedCollection.Feeds)
             {
-                feed.Items = GetFeedResponse(feed.Url).GetFeeds(feed.Url).ToList();
+                var items = cache.GetOrCreate(feed.Url, c =>
+                {
+                    c.SetSlidingExpiration(TimeSpan.FromSeconds(60));
+                    c.Priority = CacheItemPriority.High;
+                    return GetFeedResponse(feed.Url).GetFeeds(feed.Url).ToList();
+                });
+
+                feed.Items = items;
                 result.Add(feed);
             }
 

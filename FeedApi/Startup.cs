@@ -48,8 +48,6 @@ namespace FeedApi
 
             services.AddSwaggerGen(options =>
             {
-                //options.DocumentFilter<ClearDefinitionsDocumentFilter>();
-
                 var provider = services.BuildServiceProvider().GetRequiredService<IApiVersionDescriptionProvider>();
 
                 foreach (var description in provider.ApiVersionDescriptions)

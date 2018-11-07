@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using FeedApi.Models;
 using FeedApi.Controllers;
 
-namespace StozharySite.Tests.Controllers
+namespace FeedApi.Tests.Controllers
 {
     /// <summary>
     /// For example I implemented a couple actions tests
